@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context="project.org.com.acessif.SemAjuda"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -18,7 +19,9 @@
         tools:layout_editor_absoluteX="359dp"
         tools:layout_editor_absoluteY="207dp"
         android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick=""
+        />
 
     <Button
         android:id="@+id/button14"
@@ -33,7 +36,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:layout_editor_absoluteX="7dp" />
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/textView2" />
 
     <Button
         android:id="@+id/button13"
@@ -52,6 +58,7 @@
         android:layout_width="289dp"
         android:layout_height="56dp"
         android:layout_marginTop="8dp"
+        android:layout_gravity="start"
         android:text="Escolha uma das opções:"
         android:textAlignment="viewStart"
         android:textColor="#09205D"
@@ -61,7 +68,9 @@
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintTop_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="8dp" />
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <Button
         android:id="@+id/button10"
@@ -83,9 +92,10 @@
         android:layout_height="wrap_content"
         android:background="#2572E8"
         android:text="Voltar"
-        tools:layout_editor_absoluteY="219dp"
         android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -94,9 +104,10 @@
         android:text="Você está no campus"
         android:textAlignment="center"
         android:textColor="#3929FF"
-        tools:layout_editor_absoluteX="7dp"
         tools:text="Para informações sobre outros campi clique no botão"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/button16" />
+        app:layout_constraintBottom_toTopOf="@+id/button16"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

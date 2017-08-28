@@ -10,35 +10,50 @@
         android:id="@+id/button4"
         android:layout_width="265dp"
         android:layout_height="128dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
         android:background="@android:color/background_dark"
         android:backgroundTint="@android:color/background_dark"
+        android:onClick="telaVisual"
         android:text="VISUAL"
         android:textColor="@android:color/background_light"
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="153dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="264dp"
         android:layout_height="129dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
         android:background="#4C9F71"
+        android:onClick="telaAuditiva"
         android:text="Auditiva"
         android:textColor="@android:color/background_light"
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="5dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/button5"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="275dp"
         android:layout_height="127dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
         android:background="#4C9F71"
+        android:onClick="telaAtencao"
         android:text="DÉFICT DE ATENÇÃO"
         android:textColor="@android:color/background_light"
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="301dp"
-        tools:layout_editor_absoluteY="154dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <Button
         android:id="@+id/button5"
@@ -48,8 +63,12 @@
         android:text="SEM DEFICIÊNCIA"
         android:textColor="@android:color/background_light"
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="300dp"
-        tools:layout_editor_absoluteY="5dp"
-        android:onClick="telaSemAjuda"/>
+        android:onClick="telaSemAjuda"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
