@@ -6,20 +6,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button buttonSemAjuda = (Button) findViewById();
+        Button buttonSemAjuda = (Button) findViewById(R.id.buttonSemDeficiencia);
+        buttonSemAjuda.setOnClickListener(this);
+        Button buttonAditiva = (Button) findViewById(R.id.buttonAuditiva);
+        buttonAditiva.setOnClickListener(this);
+        Button buttonVisual = (Button) findViewById(R.id.buttonSemDeficiencia);
+        buttonVisual.setOnClickListener(this);
+        Button buttonAtencao = (Button) findViewById(R.id.buttonAtencao);
+        buttonAtencao.setOnClickListener(this);
     }
 
-
-
-
     public void telaSemAjuda (View view){
-
         Intent intent = new Intent(MainActivity.this, SemAjuda.class);
         startActivity(intent);
     }
@@ -34,5 +37,10 @@ public class MainActivity extends AppCompatActivity {
     public void telaAtencao (View view){
         Intent intent = new Intent(MainActivity.this, Atencao.class);
         startActivity(intent);
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 }
