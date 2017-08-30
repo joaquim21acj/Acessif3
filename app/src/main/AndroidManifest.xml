@@ -17,9 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".SemAjuda">
-
         </activity>
 
+        <activity android:name=".Assitencia">
+        </activity>
     </application>
 
 </manifest>
