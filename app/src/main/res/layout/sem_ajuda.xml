@@ -10,24 +10,28 @@
     android:weightSum="1">
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/buttonAssistencia"
         android:layout_width="217dp"
         android:layout_height="64dp"
         android:background="#2572E8"
         android:text="Assistência estudantil"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="359dp"
-        tools:layout_editor_absoluteY="207dp"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
         android:onClick=""
-        />
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/buttonVoltar"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="1.0" />
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/buttonCampi"
         android:layout_width="162dp"
         android:layout_height="65dp"
         android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="0dp"
         android:layout_marginTop="8dp"
         android:background="#2572E8"
         android:backgroundTint="#2572E8"
@@ -35,14 +39,14 @@
         android:textColor="#14305b"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginRight="0dp"
-        app:layout_constraintRight_toRightOf="@+id/textView2" />
+        app:layout_constraintRight_toRightOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.666" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/buttonBiblioteca"
         android:layout_width="217dp"
         android:layout_height="64dp"
         android:background="#2572E8"
@@ -51,7 +55,7 @@
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/button15" />
+        app:layout_constraintBottom_toTopOf="@+id/buttonAssistencia" />
 
     <TextView
         android:id="@+id/textView"
@@ -73,20 +77,22 @@
         app:layout_constraintRight_toRightOf="parent" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/buttonCursos"
         android:layout_width="217dp"
         android:layout_height="64dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
         android:background="#2572E8"
         android:lineSpacingExtra="18sp"
         android:text="Cursos"
         android:textSize="18sp"
-        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBiblioteca"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/button13" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/button16"
+        android:id="@+id/buttonVoltar"
         style="@style/ThemeOverlay.AppCompat.ActionBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -106,7 +112,7 @@
         android:textColor="#3929FF"
         tools:text="Para informações sobre outros campi clique no botão"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/button16"
+        app:layout_constraintBottom_toTopOf="@+id/buttonVoltar"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent" />
 

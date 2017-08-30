@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent intent = new Intent(MainActivity.this, Visual.class);
         startActivity(intent);
     }
+
     public void telaAtencao (View view){
         Intent intent = new Intent(MainActivity.this, Atencao.class);
         startActivity(intent);
