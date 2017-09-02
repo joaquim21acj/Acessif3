@@ -7,7 +7,7 @@
     tools:context="project.org.com.acessif.MainActivity">
 
     <Button
-        android:id="@+id/buttonTelaVisual"
+        android:id="@+id/buttonVisual"
         android:layout_width="276dp"
         android:layout_height="128dp"
         android:layout_marginBottom="8dp"
@@ -21,10 +21,10 @@
         android:textColor="@android:color/background_light"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.307"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/buttonAtencao"
         app:layout_constraintTop_toBottomOf="@+id/buttonAuditiva"
-        app:layout_constraintHorizontal_bias="0.307"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button

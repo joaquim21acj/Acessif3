@@ -19,7 +19,7 @@
         <activity android:name=".SemAjuda">
         </activity>
 
-        <activity android:name=".Assitencia">
+        <activity android:name=".Atencao">
         </activity>
     </application>
 

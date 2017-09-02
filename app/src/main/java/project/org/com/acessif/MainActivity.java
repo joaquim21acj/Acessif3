@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttonSemAjuda.setOnClickListener(this);
         Button buttonAditiva = (Button) findViewById(R.id.buttonAuditiva);
         buttonAditiva.setOnClickListener(this);
-        Button buttonVisual = (Button) findViewById(R.id.buttonSemDeficiencia);
+        Button buttonVisual = (Button) findViewById(R.id.buttonVisual);
         buttonVisual.setOnClickListener(this);
         Button buttonAtencao = (Button) findViewById(R.id.buttonAtencao);
         buttonAtencao.setOnClickListener(this);
@@ -45,6 +45,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()){
             case R.id.buttonSemDeficiencia: {
                 telaSemAjuda(v);
+                break;
+            }
+            case R.id.buttonAuditiva: {
+                telaAuditiva(v);
+                break;
+            }
+            case R.id.buttonAtencao: {
+                telaAtencao(v);
+                break;
+            }
+            case R.id.buttonVisual: {
+                telaVisual(v);
                 break;
             }
         }
