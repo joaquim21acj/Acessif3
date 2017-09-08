@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="42dp"
+            android:layout_height="19dp"
+            android:text="Libras"
+            android:textColor="#280CE8"
+            tools:layout_editor_absoluteX="89dp"
+            tools:layout_editor_absoluteY="252dp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escolha um tipo de assistência"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton19"
+            android:layout_width="179dp"
+            android:layout_height="163dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/headphone"
+            app:srcCompat="@mipmap/headphone"
+            tools:layout_editor_absoluteX="207dp"
+            tools:layout_editor_absoluteY="89dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton21"
+            android:layout_width="179dp"
+            android:layout_height="163dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/libras"
+            app:srcCompat="@mipmap/voz"
+            tools:layout_editor_absoluteX="401dp"
+            tools:layout_editor_absoluteY="89dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton22"
+            android:layout_width="179dp"
+            android:layout_height="163dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/libras"
+            app:srcCompat="@mipmap/libras"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="89dp" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voz"
+            android:textColor="#280CE8"
+            tools:layout_editor_absoluteX="474dp"
+            tools:layout_editor_absoluteY="254dp" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fone"
+            android:textColor="#280CE8"
+            tools:layout_editor_absoluteX="281dp"
+            tools:layout_editor_absoluteY="254dp" />
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>
