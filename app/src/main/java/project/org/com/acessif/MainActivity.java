@@ -13,51 +13,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button buttonSemAjuda = (Button) findViewById(R.id.buttonSemDeficiencia);
+        Button buttonSemAjuda = (Button) findViewById(R.id.button);
         buttonSemAjuda.setOnClickListener(this);
-        Button buttonAditiva = (Button) findViewById(R.id.buttonAuditiva);
-        buttonAditiva.setOnClickListener(this);
-        Button buttonVisual = (Button) findViewById(R.id.buttonVisual);
-        buttonVisual.setOnClickListener(this);
-        Button buttonAtencao = (Button) findViewById(R.id.buttonAtencao);
-        buttonAtencao.setOnClickListener(this);
+//        Button buttonPNE = (Button) findViewById(R.id.buttonAcessoPNE);
+//        buttonSemAjuda.setOnClickListener(this);
     }
 
-    public void telaSemAjuda (View view){
+    public void acessoDireto (View view){
         Intent intent = new Intent(MainActivity.this, SemAjuda.class);
         startActivity(intent);
     }
-    public void telaAuditiva (View view){
-        Intent intent = new Intent(MainActivity.this, Auditiva.class);
-        startActivity(intent);
-    }
-    public void telaVisual (View view){
-        Intent intent = new Intent(MainActivity.this, Visual.class);
-        startActivity(intent);
-    }
-
-    public void telaAtencao (View view){
-        Intent intent = new Intent(MainActivity.this, Atencao.class);
+    public void acessoPNE (View view){
+        Intent intent = new Intent(MainActivity.this, PNE.class);
         startActivity(intent);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.buttonSemDeficiencia: {
-                telaSemAjuda(v);
-                break;
-            }
-            case R.id.buttonAuditiva: {
-                telaAuditiva(v);
-                break;
-            }
-            case R.id.buttonAtencao: {
-                telaAtencao(v);
-                break;
-            }
-            case R.id.buttonVisual: {
-                telaVisual(v);
+            case R.id.button: {
+                acessoPNE(v);
                 break;
             }
         }

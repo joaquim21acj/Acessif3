@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Acessif</string>
+    <string name="acesso_para_pessoas_com_necessidades_especificas">ACESSO PARA PESSOAS COM NECESSIDADES ESPECIFICAS</string>
+    <string name="informa_es_sobre_o_ifb">Informações Sobre o IFB</string>
+    <string name="voz">Voz</string>
+    <string name="escolha_um_tipo_de_assist_ncia">Escolha um tipo de assistência</string>
+    <string name="fone">Fone</string>
+    <string name="libras">Libras</string>
+    <string name="voltar">Voltar</string>
 </resources>

@@ -9,13 +9,15 @@
 
     <Button
         android:id="@+id/button15"
-        android:layout_width="217dp"
-        android:layout_height="64dp"
+        android:layout_width="268dp"
+        android:layout_height="125dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="8dp"
         android:background="#2572E8"
         android:text="Assistência estudantil"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="359dp"
-        tools:layout_editor_absoluteY="207dp" />
+        android:textSize="36sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTecAliLibras" />
 
     <Button
         android:id="@+id/button14"
@@ -24,56 +26,65 @@
         android:background="#2572E8"
         android:backgroundTint="#2572E8"
         android:text="Outros campi"
-        android:textColor="2572E8"
+        android:textColor="#2572E8"
         android:textSize="18sp"
-        tools:layout_editor_absoluteY="80dp"
-        tools:layout_editor_absoluteX="7dp" />
+        tools:layout_editor_absoluteY="97dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <Button
-        android:id="@+id/button13"
-        android:layout_width="217dp"
-        android:layout_height="64dp"
+        android:id="@+id/buttonTecAliLibras"
+        android:layout_width="268dp"
+        android:layout_height="125dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginTop="13dp"
         android:background="#2572E8"
         android:text="Biblioteca"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="359dp"
-        tools:layout_editor_absoluteY="136dp" />
+        android:textSize="36sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTecAdmLibras" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="289dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="453dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="15dp"
         android:text="Escolha uma das opções:"
         android:textAlignment="viewStart"
         android:textColor="#09205D"
-        android:textSize="24sp"
+        android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintTop_creator="1"
-        tools:layout_editor_absoluteX="7dp" />
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <Button
-        android:id="@+id/button10"
-        android:layout_width="217dp"
-        android:layout_height="64dp"
+        android:id="@+id/buttonTecAdmLibras"
+        android:layout_width="270dp"
+        android:layout_height="125dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="15dp"
         android:background="#2572E8"
         android:lineSpacingExtra="18sp"
         android:text="Cursos"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="359dp"
-        tools:layout_editor_absoluteY="64dp" />
+        android:textSize="36sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button16"
         style="@style/ThemeOverlay.AppCompat.ActionBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="134dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="8dp"
         android:background="#2572E8"
+        android:onClick="voltar"
         android:text="Voltar"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="219dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
@@ -82,8 +93,9 @@
         android:text="Você está no campus"
         android:textAlignment="center"
         android:textColor="#3929FF"
-        tools:layout_editor_absoluteX="7dp"
-        tools:layout_editor_absoluteY="146dp"
-        tools:text="Para informações sobre outros campi clique no botão" />
+        tools:layout_editor_absoluteX="8dp"
+        tools:text="Para informações sobre outros campi clique no botão"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/button14" />
 
 </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Psicologo."
+        android:layout_marginTop="-1dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        android:layout_marginLeft="424dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/buttonVoltarALibras"
+        android:layout_width="75dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="524dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Voltar"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTecAdmLibras" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:text="Assistência Estudantil"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <VideoView
+        android:id="@+id/videoView9"
+        android:layout_width="408dp"
+        android:layout_height="277dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="176dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="154dp"
+        android:layout_height="41dp"
+        android:layout_marginLeft="402dp"
+        android:layout_marginTop="0dp"
+        android:text="Atendimento realizado por: "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.892" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="148dp"
+        android:layout_height="32dp"
+        android:text="Horário funcionamento: 07:00 - 20:00"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        android:layout_marginLeft="428dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pedagogo;"
+        android:layout_marginTop="-1dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        android:layout_marginLeft="424dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assistente social; "
+        android:layout_marginTop="-6dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        android:layout_marginLeft="427dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="160dp"
+        android:layout_height="54dp"
+        android:text="Localização: Sala próxima registro acadêmico"
+        android:layout_marginLeft="399dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonVoltarALibras"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView19"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+    <Button
+        android:id="@+id/buttonRepetirA"
+        android:layout_width="76dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        android:text="Repetir"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/buttonVoltarALibras"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>

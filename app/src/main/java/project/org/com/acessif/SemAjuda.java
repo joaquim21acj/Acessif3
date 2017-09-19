@@ -16,31 +16,30 @@ public class SemAjuda extends AppCompatActivity implements View.OnClickListener{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sem_ajuda);
-        Button buttonCampi = (Button) findViewById(R.id.buttonCampi);
-        buttonCampi.setOnClickListener(this);
-        Button buttonVoltar = (Button) findViewById(R.id.buttonVoltar);
+  //      Button buttonCampi = (Button) findViewById(R.id.buttonCampi);
+ //       buttonCampi.setOnClickListener(this);
+        Button buttonVoltar = (Button) findViewById(R.id.buttonVoltarLibras);
         buttonVoltar.setOnClickListener(this);
-        Button buttonCursos = (Button) findViewById(R.id.buttonCursos);
+        Button buttonCursos = (Button) findViewById(R.id.buttonCursosLibras);
         buttonCursos.setOnClickListener(this);
-        Button buttonBiblioteca = (Button) findViewById(R.id.buttonBiblioteca);
+        Button buttonBiblioteca = (Button) findViewById(R.id.buttonBibliotecaLibras);
         buttonBiblioteca.setOnClickListener(this);
-        Button buttonAssistencia = (Button) findViewById(R.id.buttonAssistencia);
-        buttonAssistencia.setOnClickListener(this);
+  //      Button buttonAssistencia = (Button) findViewById(R.id.buttonAssistencia);
+    //    buttonAssistencia.setOnClickListener(this);
     }
     @Override
     public void onClick (View v) {
-        switch (v.getId()){
-            case R.id.buttonCampi: {
+        switch (v.getId()) {
+            case R.id.buttonCursosLibras: {
                 outrosCampi(v);
                 break;
             }
-            case R.id.buttonVoltar: {
+            case R.id.buttonVoltarLibras: {
                 voltar(v);
                 break;
             }
-
         }
-    }
+        }
     public void outrosCampi (View view){
         Intent intent = new Intent(SemAjuda.this, OutrosCampi.class);
         startActivity(intent);
@@ -58,7 +57,7 @@ public class SemAjuda extends AppCompatActivity implements View.OnClickListener{
         startActivity(intent);
     }
     public void assitencia(){
-        Intent intent = new Intent(SemAjuda.this, Assistencia.class);
+        Intent intent = new Intent(SemAjuda.this, PNE.class);
         startActivity(intent);
     }
 
