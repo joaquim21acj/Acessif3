@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button buttonSemAjuda = (Button) findViewById(R.id.button);
+        Button buttonSemAjuda = (Button) findViewById(R.id.button10);
         buttonSemAjuda.setOnClickListener(this);
 //        Button buttonPNE = (Button) findViewById(R.id.buttonAcessoPNE);
 //        buttonSemAjuda.setOnClickListener(this);
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.button: {
+            case R.id.button10: {
                 acessoPNE(v);
                 break;
             }
