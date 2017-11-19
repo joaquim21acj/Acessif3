@@ -21,6 +21,14 @@
 
         <activity android:name="project.org.com.acessif.Libras">
         </activity>
+        <activity android:name="project.org.com.acessif.CursosLibras">
+        </activity>
+        <activity android:name="project.org.com.acessif.TecnicosLibra">
+        </activity>
+        <activity android:name="project.org.com.acessif.LicenciaturaLibras">
+        </activity>
+        <activity android:name="project.org.com.acessif.BibliotecaLibras">
+        </activity>
         <activity android:name="project.org.com.acessif.PNE" >
         </activity>
         <activity android:name="project.org.com.acessif.AssistenciaLibras" >

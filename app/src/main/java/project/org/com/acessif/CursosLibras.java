@@ -1,10 +1,13 @@
 package project.org.com.acessif;
 
 import android.content.Intent;
+import android.graphics.PixelFormat;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.VideoView;
 
 /**
  * Created by joaqu on 16/09/2017.
@@ -23,8 +26,16 @@ public class CursosLibras extends AppCompatActivity implements View.OnClickListe
         buttonLic.setOnClickListener(this);
         final Button buttonFIC = (Button) findViewById(R.id.buttonFIC);
         buttonFIC.setOnClickListener(this);
-        final Button buttonVoltarCLibras = (Button) findViewById(R.id.buttonVoltarCLibras);
+        Button buttonVoltarCLibras = (Button) findViewById(R.id.buttonVoltarCLibras);
         buttonVoltarCLibras.setOnClickListener(this);
+        getWindow().setFormat(PixelFormat.UNKNOWN);
+        VideoView videoBiblioteca = (VideoView)findViewById(R.id.videoViewCursos);
+        videoBiblioteca.setOnClickListener(this);
+        String caminho = "android.resource://project.org.com.acessif/"+R.raw.cursos;
+        Uri uri = Uri.parse(caminho);
+        videoBiblioteca.setVideoURI(uri);
+        videoBiblioteca.requestFocus();
+        videoBiblioteca.start();
     }
 
     @Override
@@ -46,7 +57,7 @@ public class CursosLibras extends AppCompatActivity implements View.OnClickListe
                 FICLibras(v);
                 break;
             }
-            case R.id.buttonVoltarLibras:{
+            case R.id.buttonVoltarCLibras:{
                 VoltarCursos(v);
                 break;
             }
@@ -72,5 +83,6 @@ public class CursosLibras extends AppCompatActivity implements View.OnClickListe
     }
     public void VoltarCursos (View view){
         Intent intent = new Intent(CursosLibras.this, Libras.class);
+        startActivity(intent);
     }
 }

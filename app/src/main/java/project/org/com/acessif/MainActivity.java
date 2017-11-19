@@ -13,10 +13,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button buttonSemAjuda = (Button) findViewById(R.id.button10);
+        Button buttonPNE = (Button) findViewById(R.id.buttonPNE);
+        buttonPNE.setOnClickListener(this);
+        Button buttonSemAjuda = (Button) findViewById(R.id.buttonAcessoDireto);
         buttonSemAjuda.setOnClickListener(this);
-//        Button buttonPNE = (Button) findViewById(R.id.buttonAcessoPNE);
-//        buttonSemAjuda.setOnClickListener(this);
     }
 
     public void acessoDireto (View view){
@@ -31,8 +31,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.button10: {
+            case R.id.buttonPNE: {
                 acessoPNE(v);
+                break;
+            }
+            case R.id.buttonAcessoDireto:{
+                acessoDireto(v);
                 break;
             }
         }
