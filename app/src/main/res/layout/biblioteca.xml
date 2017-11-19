@@ -112,8 +112,10 @@
         android:layout_marginTop="8dp"
         android:text="Repetir"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
         app:layout_constraintLeft_toRightOf="@+id/videoView8"
         app:layout_constraintRight_toLeftOf="@+id/buttonVoltarrBLibras"
-        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+        app:layout_constraintTop_toBottomOf="@+id/textView25"
+        app:layout_constraintVertical_bias="0.953" />
 
 </android.support.constraint.ConstraintLayout>
